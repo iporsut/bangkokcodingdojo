@@ -15,8 +15,7 @@ func Call(n int) string {
 	return strconv.Itoa(n)
 }
 
-func Range(s int, f int) []string {
-	var result []string = make([]string, 0, 0)
+func Range(s int, f int) (result []string) {
 	for i := s; i <= f; i++ {
 		result = append(result, Call(i))
 	}
